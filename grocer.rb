@@ -135,4 +135,6 @@ def checkout(cart, coupons)
   # grand_total
 
   pp cart
+  pp "---------------------"
+  pp coupons
 end
