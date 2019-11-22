@@ -74,9 +74,17 @@ def apply_coupons(cart, coupons)
 
     if find_item_by_name_in_collection(item_name, coupons) != nil
       coupon_item = find_item_by_name_in_collection(item_name, coupons)
+
+      # Reasigning the duplicate item name to be the name with coupon
       item_dup[:item] = "#{item_name} W/COUPON"
+
+      # Chaning the count in the duplicate item and the original item
       item[:count] -= coupon_item[:num]
       item_dup[:count] -= item[:count]
+
+      # Changing the price
+      item_dup[:price] = (coupon_item[:cost] / coupon_item[:num])
+
       cart << item_dup
     end
 
