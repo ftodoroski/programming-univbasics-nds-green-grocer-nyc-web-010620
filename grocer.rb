@@ -1,3 +1,4 @@
+# find an item and return the collection of that item
 def find_item_by_name_in_collection(name, collection)
   i = 0
   while i < collection.length
@@ -11,20 +12,20 @@ def find_item_by_name_in_collection(name, collection)
   nil
 end
 
+def get_uniq(cart)
+  basket =
+
+
+end
+
+
 def consolidate_cart(cart)
   basket = []
   pp cart
 
   i = 0
   while i < cart.length
-    item_name = cart[i][:item]
     item = cart[i]
-
-
-
-
-
-
 
     i += 1
   end
