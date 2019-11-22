@@ -113,24 +113,24 @@ def apply_clearance(cart)
 end
 
 def checkout(cart, coupons)
-  consolidate_cart = consolidate_cart(cart)
-  grand_total = 0
-
-  # Applies coupons and clearance
-  apply_coupons(consolidate_cart, coupons)
-  apply_clearance(consolidate_cart)
-
-  i = 0
-  while i < consolidate_cart.length
-    item = cart[i]
-    grand_total += item[:price]
-
-    i += 1
-  end
-
-  if grand_total >= 100
-    grand_total = grand_total - ((grand_total * 10.0) / 100)
-  end
-
-  grand_total
+  # consolidate_cart = consolidate_cart(cart)
+  # grand_total = 0
+  #
+  # # Applies coupons and clearance
+  # apply_coupons(consolidate_cart, coupons)
+  # apply_clearance(consolidate_cart)
+  #
+  # i = 0
+  # while i < consolidate_cart.length
+  #   item = cart[i]
+  #   grand_total += item[:price]
+  #
+  #   i += 1
+  # end
+  #
+  # if grand_total >= 100
+  #   grand_total = grand_total - ((grand_total * 10.0) / 100)
+  # end
+  #
+  # grand_total
 end
