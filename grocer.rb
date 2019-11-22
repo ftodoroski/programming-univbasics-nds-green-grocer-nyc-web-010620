@@ -72,11 +72,12 @@ def apply_coupons(cart, coupons)
     item_name = cart[i][:item]
     item_price = cart[i][:price]
     item_count = cart[i][:count]
+    item_dup = cart[i].dup
 
     if find_item_by_name_in_collection(item_name, coupons) != nil
       coupons_item = find_item_by_name_in_collection(item_name, coupons)
 
-      pp coupons_item
+
     end
 
     i += 1
