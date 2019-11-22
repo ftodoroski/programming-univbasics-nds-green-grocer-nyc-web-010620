@@ -30,7 +30,7 @@ def get_uniq(cart)
   basket
 end
 
-# Adds a count property to the each item
+# Adds a count property toeach item
 def set_count(cart)
   i = 0
   while i < cart.length
