@@ -133,5 +133,5 @@ def checkout(cart, coupons)
     grand_total = (grand_total - ((grand_total * 10.0) / 100))
   end
 
-  grand_total
+  pp grand_total
 end
