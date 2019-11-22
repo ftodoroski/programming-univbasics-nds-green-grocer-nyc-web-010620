@@ -133,8 +133,8 @@ def checkout(cart, coupons)
   # end
   #
   # grand_total
-
-  pp cart
-  pp "---------------------"
-  pp coupons
+  
+  # pp cart
+  # pp "---------------------"
+  # pp coupons
 end
