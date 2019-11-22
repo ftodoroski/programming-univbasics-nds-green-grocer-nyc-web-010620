@@ -19,6 +19,11 @@ def consolidate_cart(cart)
     item_name = cart[i][:item]
     item = cart[i]
 
+    
+
+
+
+
 
     i += 1
   end
