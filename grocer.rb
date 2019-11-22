@@ -1,4 +1,3 @@
-
 # find an item and returns a hash
 def find_item_by_name_in_collection(name, collection)
   i = 0
