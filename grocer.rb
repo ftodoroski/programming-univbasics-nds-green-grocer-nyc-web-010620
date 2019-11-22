@@ -42,7 +42,7 @@ def set_count(cart)
   end
 
   cart
-ends
+end
 
 def consolidate_cart(cart)
   basket = set_count(get_uniq(cart))
