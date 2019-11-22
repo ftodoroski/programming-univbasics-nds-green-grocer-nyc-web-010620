@@ -22,6 +22,7 @@ def get_uniq(cart)
 
     if find_item_by_name_in_collection(item_name, basket) == nil
       item[:count] = 0
+    end
 
 
     i += 1
