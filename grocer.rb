@@ -24,11 +24,10 @@ def get_uniq(cart)
       basket << item
     end
 
-
     i += 1
   end
 
-
+  basket
 end
 
 
