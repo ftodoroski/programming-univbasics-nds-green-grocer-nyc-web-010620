@@ -13,15 +13,20 @@ def find_item_by_name_in_collection(name, collection)
 end
 
 def get_uniq(cart)
-  # basket = []
-  #
-  # i = 0
-  # while i < cart.length
-  #   item
-  #
-  #
-  #   i += 1
-  # end
+  basket = []
+
+  i = 0
+  while i < cart.length
+    item_name = cart[i][:name]
+    item = cart[i]
+
+
+    if find_item_by_name_in_collection(item_name, basket) == nil
+
+
+
+    i += 1
+  end
 
 
 end
