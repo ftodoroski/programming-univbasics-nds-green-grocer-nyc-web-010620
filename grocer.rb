@@ -13,7 +13,15 @@ def find_item_by_name_in_collection(name, collection)
 end
 
 def get_uniq(cart)
-  basket =
+  # basket = []
+  #
+  # i = 0
+  # while i < cart.length
+  #   item
+  #
+  #
+  #   i += 1
+  # end
 
 
 end
