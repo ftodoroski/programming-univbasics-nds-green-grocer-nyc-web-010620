@@ -54,7 +54,7 @@ def consolidate_cart(cart)
 
     if find_item_by_name_in_collection(item_name, basket)
       basket_item = find_item_by_name_in_collection(item_name, basket)
-      basket[:count] += 1
+      basket_item[:count] += 1
     end
 
     i += 1
