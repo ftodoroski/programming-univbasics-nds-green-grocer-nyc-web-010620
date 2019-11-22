@@ -65,6 +65,7 @@ def consolidate_cart(cart)
   basket
 end
 
+# Applies a coupon to the cart
 def apply_coupons(cart, coupons)
   i = 0
   while i < cart.length
@@ -97,7 +98,7 @@ end
 
 
 def apply_clearance(cart)
-  
+
 end
 
 def checkout(cart, coupons)
