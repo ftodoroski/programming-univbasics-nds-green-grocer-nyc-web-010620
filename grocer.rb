@@ -74,7 +74,9 @@ def apply_coupons(cart, coupons)
     item_count = cart[i][:count]
 
     if find_item_by_name_in_collection(item_name, coupons) != nil
-      coupons_item = find_item_by_name_in_collection(item_name, coupons) 
+      coupons_item = find_item_by_name_in_collection(item_name, coupons)
+
+      cart[:item] = "#{item_name} W/COUPON"
     end
 
     i += 1
