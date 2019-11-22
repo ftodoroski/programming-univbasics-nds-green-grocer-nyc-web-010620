@@ -30,6 +30,18 @@ def get_uniq(cart)
   basket
 end
 
+# Adds a count property to the each item
+def set_count(cart)
+  i = 0
+  while i < cart.length
+    item = cart[i]
+    item[:count] = 0
+
+    i += 1
+  end
+
+  cart
+ends
 
 def consolidate_cart(cart)
   basket = get_uniq(cart)
