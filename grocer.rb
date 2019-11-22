@@ -32,7 +32,7 @@ end
 
 
 def consolidate_cart(cart)
-  # pp get_uniq(cart)
+  pp get_uniq(cart)
 
 
 end
