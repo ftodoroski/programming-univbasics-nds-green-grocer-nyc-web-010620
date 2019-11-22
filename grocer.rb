@@ -46,6 +46,8 @@ ends
 
 def consolidate_cart(cart)
   basket = set_count(get_uniq(cart))
+
+  pp basket
 end
 
 
