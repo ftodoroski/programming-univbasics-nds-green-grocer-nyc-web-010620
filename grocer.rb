@@ -71,6 +71,8 @@ def apply_coupons(cart, coupons)
     item = cart[i]
     item_name = cart[i][:item]
 
+    if find_item_by_name_in_collection(item_name, coupons) != nil
+
     i += 1
   end
 
