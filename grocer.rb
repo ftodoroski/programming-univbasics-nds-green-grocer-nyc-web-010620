@@ -29,7 +29,7 @@ end
 
 def consolidate_cart(cart)
   basket = []
-  # pp cart
+  pp cart
 
   i = 0
   while i < cart.length
