@@ -66,26 +66,24 @@ def consolidate_cart(cart)
 end
 
 def apply_coupons(cart, coupons)
-  def apply_coupons(cart, coupons)
-    i = 0
-    while i < cart.length
-      item = cart[i]
-      item_name = cart[i][:item]
-      item_dup = cart[i].dup
+  i = 0
+  while i < cart.length
+    item = cart[i]
+    item_name = cart[i][:item]
+    item_dup = cart[i].dup
 
-      if find_item_by_name_in_collection(item_name, coupons) != nil
-        coupon_item = find_item_by_name_in_collection(item_name, coupons)
-        item_dup[:item] = "#{item_name} W/COUPON"
-        item[:count] -= coupon_item[:num]
-        item_dup[:count] -= item[:count]
-        cart << item_dup
-      end
-
-      i += 1
+    if find_item_by_name_in_collection(item_name, coupons) != nil
+      coupon_item = find_item_by_name_in_collection(item_name, coupons)
+      item_dup[:item] = "#{item_name} W/COUPON"
+      item[:count] -= coupon_item[:num]
+      item_dup[:count] -= item[:count]
+      cart << item_dup
     end
 
-    cart
+    i += 1
   end
+
+  cart
   end
 
 end
