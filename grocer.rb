@@ -32,16 +32,7 @@ end
 
 
 def consolidate_cart(cart)
-  basket = []
-  pp cart
-
-  i = 0
-  while i < cart.length
-    item = cart[i]
-
-    i += 1
-  end
-
+  pp get_uniq(cart)
 
 end
 
