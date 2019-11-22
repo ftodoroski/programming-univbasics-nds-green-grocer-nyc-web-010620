@@ -123,8 +123,9 @@ def checkout(cart, coupons)
   while i < consolidated_cart.length
     item = cart[i]
     item_count = cart[i][:count]
-    grand_total += (item[:price] * item_count)
+    item_price = cart[i][:price]
 
+    grand_total += (item_price * item_count)
     i += 1
   end
 
