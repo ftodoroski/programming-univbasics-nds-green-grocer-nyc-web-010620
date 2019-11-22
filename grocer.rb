@@ -12,6 +12,7 @@ def find_item_by_name_in_collection(name, collection)
   nil
 end
 
+# gets unique items
 def get_uniq(cart)
   basket = []
 
