@@ -70,8 +70,12 @@ def apply_coupons(cart, coupons)
   while i < cart.length
     item = cart[i]
     item_name = cart[i][:item]
+    item_price = cart[i][:price]
+    item_count = cart[i][:count]
 
     if find_item_by_name_in_collection(item_name, coupons) != nil
+
+    end
 
     i += 1
   end
