@@ -17,7 +17,6 @@ def get_uniq(cart)
 
   i = 0
   while i < cart.length
-    item_name = cart[i][:name]
     item = cart[i]
 
     if find_item_by_name_in_collection(item_name, basket) == nil
@@ -33,7 +32,7 @@ end
 
 def consolidate_cart(cart)
   # pp get_uniq(cart)
-  pp "Hello"
+
 
 end
 
