@@ -1,4 +1,4 @@
-# find an item and return the collection of that item
+# find an item and returns a hash
 def find_item_by_name_in_collection(name, collection)
   i = 0
   while i < collection.length
