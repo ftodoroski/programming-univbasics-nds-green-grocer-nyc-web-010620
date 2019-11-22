@@ -1,3 +1,4 @@
+
 # find an item and returns a hash
 def find_item_by_name_in_collection(name, collection)
   i = 0
@@ -12,14 +13,14 @@ def find_item_by_name_in_collection(name, collection)
   nil
 end
 
-# gets unique items
+# returns uniq items in a collection
 def get_uniq(cart)
   basket = []
 
   i = 0
   while i < cart.length
-    item_name = cart[i][:item]
     item = cart[i]
+    item_name = cart[i][:item]
 
     if find_item_by_name_in_collection(item_name, basket) == nil
       basket << item
@@ -31,7 +32,7 @@ def get_uniq(cart)
   basket
 end
 
-# Adds a count property to each item
+# Sets a counter at 0
 def set_count(cart)
   i = 0
   while i < cart.length
@@ -44,6 +45,7 @@ def set_count(cart)
   cart
 end
 
+# Adds a count of items to the basket from cart
 def consolidate_cart(cart)
   basket = set_count(get_uniq(cart))
 
@@ -62,24 +64,6 @@ def consolidate_cart(cart)
 
   basket
 end
-
-
-# basket = cart.dup
-#
-# i = 0
-# while i < cart.length
-#   cart_item = cart[i][:item]
-#
-#   j = 0
-#   while j < basket.length
-#     basket_item = basket[j][:item]
-#
-#     j += 1
-#   end
-#
-#   i += 1
-# end
-
 
 def apply_coupons(cart, coupons)
   # Consult README for inputs and outputs
