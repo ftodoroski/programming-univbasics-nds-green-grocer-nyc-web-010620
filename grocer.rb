@@ -1,3 +1,4 @@
+
 # find an item and returns a hash
 def find_item_by_name_in_collection(name, collection)
   i = 0
@@ -82,7 +83,7 @@ def apply_coupons(cart, coupons)
       item[:count] -= coupon_item[:num]
       item_dup[:count] -= item[:count]
 
-      # Changing the price
+      # Changing the price for the item that is a coupon in the cart
       item_dup[:price] = (coupon_item[:cost] / coupon_item[:num])
 
       cart << item_dup
@@ -111,6 +112,7 @@ def apply_clearance(cart)
   cart
 end
 
+# Final Method - Check Out
 def checkout(cart, coupons)
   consolidated_cart = consolidate_cart(cart)
   grand_total = 0
