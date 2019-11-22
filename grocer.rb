@@ -12,22 +12,26 @@ def find_item_by_name_in_collection(name, collection)
 end
 
 def consolidate_cart(cart)
-  basket = cart.dup
 
-  i = 0
-  while i < cart.length
-    cart_item = cart[i][:item]
-
-    j = 0
-    while j < basket.length
-      basket_item = basket[j][:item]
-
-      j += 1
-    end
-
-    i += 1
-  end
 end
+
+
+# basket = cart.dup
+#
+# i = 0
+# while i < cart.length
+#   cart_item = cart[i][:item]
+#
+#   j = 0
+#   while j < basket.length
+#     basket_item = basket[j][:item]
+#
+#     j += 1
+#   end
+#
+#   i += 1
+# end
+
 
 def apply_coupons(cart, coupons)
   # Consult README for inputs and outputs
