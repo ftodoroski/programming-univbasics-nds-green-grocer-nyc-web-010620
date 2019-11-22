@@ -50,7 +50,7 @@ def consolidate_cart(cart)
   i = 0
   while i < cart.length
     item = cart[i]
-    item_name = cart[i][name]
+    item_name = cart[i][:iten]
 
     if find_item_by_name_in_collection(item_name, basket)
       basket_item = find_item_by_name_in_collection(item_name, basket)
