@@ -76,7 +76,7 @@ def apply_coupons(cart, coupons)
     if find_item_by_name_in_collection(item_name, coupons) != nil
       coupons_item = find_item_by_name_in_collection(item_name, coupons)
 
-      cart[:item] = "#{item_name} W/COUPON"
+      
     end
 
     i += 1
